@@ -1,0 +1,11 @@
+<div class="newPostForm">
+    <form action="newPostSend.php" method="POST">
+        <span class="formSzoveg">Név:</span> <input type="text" class="form-control" maxlength="30" id="userName" name="userName"><br>
+        <span class="formSzoveg">Cím:</span> <input type="text" class="form-control" maxlength="30" id="headline" name="headline"><br>
+        <span class="formSzoveg">Szöveg:</span> <textarea style="height: 140px;" class="form-control" maxlength="65535" name="text"></textarea><br>
+        <p class="formSzoveg">
+            Dátum:<script> document.write(new Date().toLocaleDateString()); </script>
+        </p><br>
+        <input type="submit" class="btn btn-primary kuld" value="Küld">
+    </form>
+</div>
